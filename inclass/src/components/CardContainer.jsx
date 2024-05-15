@@ -4,7 +4,9 @@ import {data} from "../helpers/data";
 import PlayerCard from './PlayerCard';
 
 const CardContainer = () => {
+    
     console.log(data)
+    const showImage=true;// burası ekrana basılacak olan kartların true ise logo false ise detayları göstermek için alt componente 
   return (
     <div>
     <Form.Control 
@@ -15,7 +17,7 @@ const CardContainer = () => {
         <Row className="justify-content-center g-3">
         {data.map((player,i)=>(
             <Col key={i} xl={3} lg={4} md={6}>
-            <PlayerCard {...player}/>{/*burada 3 nokta player "playere aç ve içindeki tüm bilgileri props olarak gönder demek " */}
+            <PlayerCard {...player} showImage={showImage}/>{/*burada 3 nokta player "playere aç ve içindeki tüm bilgileri props olarak gönder demek " */}
            </Col>
         ))}
         </Row>
