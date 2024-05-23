@@ -8,7 +8,7 @@ const CardContainer = () => {
     // console.log(search)
     // const showImage=true;// burası ekrana basılacak olan kartların true ise logo false ise detayları göstermek için alt componente 
     // const filteredData=data.filter(item=>item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()))//includes(search)  item içerisinde yazılan name kontrol eder ve var mı yok mu ona bakra
-
+    // bu bir örnek uygulamadır vscode online testidir 
   return (
     <>
     <Form.Control 
